@@ -61,7 +61,12 @@ export default function Home() {
               </li>
               <button
                 className="text-white border-2 md:mr-12 px-4 py-2 border-white cursor-pointer hover:bg-[#035700] hover:border-primary focus:bg-[#035700] focus:border-primary"
-                onClick={() => document.getElementById('modal_login').showModal()}
+                onClick={() => {
+                  const modal = document.getElementById('modal_login') as HTMLDialogElement | null;
+                  if (modal) {
+                    modal.showModal();
+                  }
+                }}
               >
                 Masuk
               </button>
@@ -145,8 +150,11 @@ export default function Home() {
                 className="text-primary hover:text-additional2 hover:underline hover:underline-offset-4"
                 onClick={() => {
                   closeModal('modal_login');
-                  document.getElementById('modal_register').showModal();
-                }}
+                  const modal = document.getElementById('modal_register') as HTMLDialogElement | null;
+                  if (modal) {
+                    modal.showModal();
+                  }
+                }}                
               >
                 Daftar!
               </button>
@@ -250,8 +258,11 @@ export default function Home() {
                 className="text-primary hover:text-additional2 hover:underline hover:underline-offset-4"
                 onClick={() => {
                   closeModal('modal_register');
-                  document.getElementById('modal_login').showModal();
-                }}
+                  const modal = document.getElementById('modal_login') as HTMLDialogElement | null;
+                  if (modal) {
+                    modal.showModal();
+                  }
+                }} 
               >
                 Login!
               </button>
