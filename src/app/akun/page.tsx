@@ -103,8 +103,7 @@ export default function Akun() {
                                                             className="accent-primary"
                                                             name="jenis_kelamin"
                                                             type="radio"
-                                                            defaultValue="Laki-laki"
-                                                            defaultChecked=""
+                                                            defaultValue="Laki-laki"                                                    
                                                         />
                                                         <label htmlFor="">Laki-laki</label>
                                                     </div>
