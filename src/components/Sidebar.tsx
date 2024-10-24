@@ -38,15 +38,15 @@ export default function Sidebar() {
                 </div>
                 Pembelian
             </a>
-            <div
-                role="button"
+            <a
+                href='/'
                 className="text-white font-poppins font-semibold flex items-center w-full py-4 pl-16 leading-tight transition-all rounded-r-lg outline-none text-start hover:bg-white hover:text-primary focus:bg-white focus:text-primary active:bg-white active:text-primary"
             >
                 <div className="grid mr-4 place-items-center">
                     <i className="fa-solid fa-right-from-bracket" />
                 </div>
                 Log Out
-            </div>
+            </a>
         </nav>
     )
 }
