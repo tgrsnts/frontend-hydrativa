@@ -5,6 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import Footer from "@/components/Footer";
+import { Produk } from "@/lib/interfaces/Produk";
 
 export default function Home() {
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -20,7 +21,7 @@ export default function Home() {
   };
   
 
-  const [products, setProducts] = useState([]); // Deklarasikan state products
+  const [products, setProducts] = useState<Produk[]>([]); // Deklarasikan state products
 
   useEffect(() => {
     const fetchProducts = async () => {
