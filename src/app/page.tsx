@@ -12,8 +12,8 @@ export default function Home() {
     setIsPasswordVisible((prev) => !prev);
   };
 
-  const closeModal = (modalId) => {
-    document.getElementById(modalId).close();
+  const closeModal = (modalId: string) => {
+    document.getElementById(modalId)?.close();
   };
 
   const [products, setProducts] = useState([]); // Deklarasikan state products
