@@ -2,9 +2,10 @@
 import { useState, useEffect } from "react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { Produk } from "@/lib/interfaces/Produk";
 
 export default function Dashboard() {
-  const [products, setProducts] = useState([]); // Deklarasikan state products
+  const [products, setProducts] = useState<Produk[]>([]); // Deklarasikan state products
 
   useEffect(() => {
     const fetchProducts = async () => {
