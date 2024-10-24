@@ -28,7 +28,10 @@ export default function Akun() {
                                 <button
                                     type="submit"
                                     className="bg-primary hover:bg-[#035700] text-white px-3 py-1 rounded-md"
-                                    onClick={() => document.getElementById('modalTambahData').showModal()}
+                                    onClick={() => {
+                                        document.getElementById('modalTambahData')!.showModal();
+                                    }}
+                                    
                                 >
                                     Tambah Alamat
                                 </button>
