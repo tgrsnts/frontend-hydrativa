@@ -13,8 +13,12 @@ export default function Home() {
   };
 
   const closeModal = (modalId: string) => {
-    document.getElementById(modalId)?.close();
+    const modal = document.getElementById(modalId) as HTMLDialogElement | null;
+    if (modal?.close) {
+      modal.close();
+    }
   };
+  
 
   const [products, setProducts] = useState([]); // Deklarasikan state products
 
