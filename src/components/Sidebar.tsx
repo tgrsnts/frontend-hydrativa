@@ -1,6 +1,8 @@
+'use client'
+import { usePathname } from 'next/navigation'
 import React from 'react'
-
 export default function Sidebar() {
+    const pathname = usePathname()
 
     return (
         <nav className="flex flex-col gap-1 pr-12 font-sans text-base font-normal text-blue-gray-700">
@@ -13,7 +15,7 @@ export default function Sidebar() {
             </a>
             <a
                 href="/akun"
-                className="mt-8 text-primary bg-white font-poppins font-semibold flex items-center w-full py-4 pl-16 leading-tight transition-all rounded-r-lg outline-none text-start hover:bg-white hover:text-primary focus:bg-white focus:text-primary active:bg-white active:text-primary"
+                className={`mt-8 ${pathname=='/akun' ? 'text-primary bg-white' : 'text-white'} font-poppins font-semibold flex items-center w-full py-4 pl-16 leading-tight transition-all rounded-r-lg outline-none text-start hover:bg-white hover:text-primary focus:bg-white focus:text-primary active:bg-white active:text-primary`}
             >
                 <div className="grid mr-4 place-items-center">
                     <i className="fa-solid fa-user" />
@@ -22,7 +24,7 @@ export default function Sidebar() {
             </a>
             <a
                 href="/alamat"
-                className="text-white font-poppins font-semibold flex items-center w-full py-4 pl-16 leading-tight transition-all rounded-r-lg outline-none text-start hover:bg-white hover:text-primary focus:bg-white focus:text-primary active:bg-white active:text-primary"
+                className={`${pathname=='/alamat' ? 'text-primary bg-white' : 'text-white'} font-poppins font-semibold flex items-center w-full py-4 pl-16 leading-tight transition-all rounded-r-lg outline-none text-start hover:bg-white hover:text-primary focus:bg-white focus:text-primary active:bg-white active:text-primary`}
             >
                 <div className="grid mr-4 place-items-center">
                     <i className="fa-solid fa-location-dot" />
@@ -31,7 +33,7 @@ export default function Sidebar() {
             </a>
             <a
                 href="/pembelian"
-                className="text-white font-poppins font-semibold flex items-center w-full py-4 pl-16 leading-tight transition-all rounded-r-lg outline-none text-start hover:bg-white hover:text-primary focus:bg-white focus:text-primary active:bg-white active:text-primary"
+                className={`${pathname=='/pembelian' ? 'text-primary bg-white' : 'text-white'} font-poppins font-semibold flex items-center w-full py-4 pl-16 leading-tight transition-all rounded-r-lg outline-none text-start hover:bg-white hover:text-primary focus:bg-white focus:text-primary active:bg-white active:text-primary`}
             >
                 <div className="grid mr-4 place-items-center">
                     <i className="fa-solid fa-bag-shopping" />
