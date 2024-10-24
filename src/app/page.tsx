@@ -39,7 +39,7 @@ export default function Home() {
       {/* <!-- Navbar --> */}
       <header className="shadow fixed top-0 w-full z-10 h-20 bg-primary">
         <div className="bg-primary relative flex justify-between lg:justify-start flex-col lg:flex-row lg:h-20 overflow-hidden px-4 py-4 md:px-36 md:mx-auto md:flex-wrap md:items-center">
-          <a href="index.html" className="flex items-center whitespace-nowrap text-2xl">
+          <a href="/" className="flex items-center whitespace-nowrap text-2xl">
             <img className="h-8" src="image/logo-hydrativa-putih.png" alt="Logo" />
           </a>
           {/* Hamburger Menu for Mobile */}
