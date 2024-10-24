@@ -19,7 +19,7 @@ export default function Home() {
       modal.close();
     }
   };
-  
+
 
   const [products, setProducts] = useState<Produk[]>([]); // Deklarasikan state products
 
@@ -155,7 +155,7 @@ export default function Home() {
                   if (modal) {
                     modal.showModal();
                   }
-                }}                
+                }}
               >
                 Daftar!
               </button>
@@ -185,7 +185,7 @@ export default function Home() {
                   className="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus:border-primary"
                   required
                 />
-               
+
               </div>
               <div className="flex flex-col">
                 <label htmlFor="username-register">Username</label>
@@ -197,7 +197,7 @@ export default function Home() {
                   className="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus:border-primary"
                   required
                 />
-              
+
               </div>
               <div className="flex flex-col">
                 <label htmlFor="email-register">Email</label>
@@ -209,7 +209,7 @@ export default function Home() {
                   className="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus:border-primary"
                   required
                 />
-      
+
               </div>
               <div className="flex flex-col">
                 <label htmlFor="password-register">Password</label>
@@ -236,7 +236,7 @@ export default function Home() {
                     className="w-full p-2 rounded-md bg-gray-100 focus:outline-none focus:ring focus:ring-primary focus:border-primary"
                     required
                   />
-                  
+
                 </div>
               </div>
               <div className="flex flex-col mt-4">
@@ -263,7 +263,7 @@ export default function Home() {
                   if (modal) {
                     modal.showModal();
                   }
-                }} 
+                }}
               >
                 Login!
               </button>
@@ -365,7 +365,107 @@ export default function Home() {
                   </a>
                 ))
               ) : (
-                <p>Loading products...</p> // Menangani kondisi ketika tidak ada produk
+                // <p>Loading products...</p> // Menangani kondisi ketika tidak ada produk
+                <>
+                <a
+                  href="detail.html"
+                  className="flex flex-col w-full lg:w-full bg-white rounded-lg shadow-md transition-transform duration-300 transform hover:bg-gray-100 hover:scale-105"
+                >
+                  <img
+                    src="image/Group 185.png"
+                    alt="Ayam Goreng"
+                    className="w-full object-cover mb-2 rounded-t-lg"
+                  />
+                  <h3 className="text-sm lg:text-lg font-poppins font-semibold">HydraTiva</h3>
+                  <div className="flex items-center justify-center gap-1">
+                    <i className="fa-solid fa-star text-yellow-400" />
+                    <div className="font-poppins text-gray-600">4.5</div>
+                  </div>
+                  <div className="font-poppins text-gray-700 mb-2">Rp 1.500.000</div>
+                  <div className="mt-auto">
+                    {/* <button
+                                      class="bg-primary rounded-md px-4 py-1 font-poppins text-white mb-4 hover:ring-2 hover:ring-primary hover:bg-white hover:text-primary">Beli</button> */}
+                    <button className="bg-white ring-2 ring-primary text-primary rounded-md px-4 py-1 font-poppins mb-4 hover:ring-2 hover:ring-primary hover:bg-primary hover:text-white">
+                      Beli
+                    </button>
+                  </div>
+                </a>
+                  <a
+                    href="detail.html"
+                    className="flex flex-col w-full lg:w-full bg-white rounded-lg shadow-md transition-transform duration-300 transform hover:bg-gray-100 hover:scale-105"
+                  >
+                    <img
+                      src="image/Group 186.png"
+                      alt="Es Jeruk"
+                      className="w-full object-cover mb-2 rounded-t-lg"
+                    />
+                    <h3 className="text-sm lg:text-lg font-poppins font-semibold">
+                      Daun Stevia Kering
+                    </h3>
+                    <div className="flex items-center justify-center gap-1">
+                      <i className="fa-solid fa-star text-yellow-400" />
+                      <div className="font-poppins text-gray-600">4.5</div>
+                    </div>
+                    <div className="font-poppins text-gray-700 mb-2">Rp 150.000</div>
+                    <div className="mt-auto">
+                      {/* <button
+                                      class="bg-primary rounded-md px-4 py-1 font-poppins text-white mb-4 hover:ring-2 hover:ring-primary hover:bg-white hover:text-primary">Beli</button> */}
+                      <button className="bg-white ring-2 ring-primary text-primary rounded-md px-4 py-1 font-poppins mb-4 hover:ring-2 hover:ring-primary hover:bg-primary hover:text-white">
+                        Beli
+                      </button>
+                    </div>
+                  </a>
+                  <a
+                    href="detail.html"
+                    className="flex flex-col w-full lg:w-full bg-white rounded-lg shadow-md transition-transform duration-300 transform hover:bg-gray-100 hover:scale-105"
+                  >
+                    <img
+                      src="image/teh stevia.jpeg"
+                      alt="Nasi"
+                      className="w-full object-cover mb-2 rounded-t-lg"
+                    />
+                    <h3 className="text-sm lg:text-lg font-poppins font-semibold">
+                      Teh Stevia
+                    </h3>
+                    <div className="flex items-center justify-center gap-1">
+                      <i className="fa-solid fa-star text-yellow-400" />
+                      <div className="font-poppins text-gray-600">4.5</div>
+                    </div>
+                    <div className="font-poppins text-gray-700 mb-2">Rp 120.000</div>
+                    <div className="mt-auto">
+                      {/* <button
+                                      class="bg-primary rounded-md px-4 py-1 font-poppins text-white mb-4 hover:ring-2 hover:ring-primary hover:bg-white hover:text-primary">Beli</button> */}
+                      <button className="bg-white ring-2 ring-primary text-primary rounded-md px-4 py-1 font-poppins mb-4 hover:ring-2 hover:ring-primary hover:bg-primary hover:text-white">
+                        Beli
+                      </button>
+                    </div>
+                  </a>
+                  <a
+                    href="detail.html"
+                    className="flex flex-col w-full lg:w-full bg-white rounded-lg shadow-md transition-transform duration-300 transform hover:bg-gray-100 hover:scale-105"
+                  >
+                    <img
+                      src="image/liquid stevia.jpeg"
+                      alt="Es teh"
+                      className="w-full object-cover mb-2 rounded-t-lg"
+                    />
+                    <h3 className="text-sm lg:text-lg font-poppins font-semibold">
+                      Liquid Stevia
+                    </h3>
+                    <div className="flex items-center justify-center gap-1">
+                      <i className="fa-solid fa-star text-yellow-400" />
+                      <div className="font-poppins text-gray-600">4.5</div>
+                    </div>
+                    <div className="font-poppins text-gray-700 mb-2">Rp 96.000</div>
+                    <div className="mt-auto">
+                      {/* <button
+                                      class="bg-primary rounded-md px-4 py-1 font-poppins text-white mb-4 hover:ring-2 hover:ring-primary hover:bg-white hover:text-primary">Beli</button> */}
+                      <button className="bg-white ring-2 ring-primary text-primary rounded-md px-4 py-1 font-poppins mb-4 hover:ring-2 hover:ring-primary hover:bg-primary hover:text-white">
+                        Beli
+                      </button>
+                    </div>
+                  </a>
+                  </>
               )}
             </div>
           </div>
