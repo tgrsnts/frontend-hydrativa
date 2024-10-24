@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="w-full lg:w-1/2 lg:pr-4">
           {/* Logo */}
           <img
-            src="/image/logo-hydratriva-putih.png" // Sesuaikan path jika perlu
+            src="/image/logo-hydrativa-putih.png" // Sesuaikan path jika perlu
             className="h-8 lg:h-16"
             alt="Logo HydraTiva"
           />
